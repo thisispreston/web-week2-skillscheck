@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 10%;
+  width: 100%;
+  padding: 10px;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.company-name {
+  width: 30%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.top-right-menu {
+  width: 50%;
+  height: 10%;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.menu-button {
+  background-color:  transparent;
+  border: none;
+  color: white;
+  margin: 0 25px;
+  font-size: 1.2rem;
+}
+
+body {
+  height: 80%;
+  width: 100vw;
+  background-color: white;
+  
+}
+
+.black-section {
+  width: 100vw;
+  height: 400px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#banner {
+  color: yellow;
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+
+.green-boxes {
+  width: 100vw;
+  height: 100px;
+  display: inline-block;
+  
+}
+
+.green-box {
+  height: 150px;
+  width: 150px;
+  background-color: mediumaquamarine;
+  border-radius: 20%;
+  
+}
+
+.orange-boxes {
+  width: 100vw;
+  height: 200px;
+}
+
+.orange-box {
+  width: 200px;
+  height: 100px;
+  background-color: orange;
+  border-radius: 10%;
+}
+
+
+footer {
+  position: absolute;
+  height: 100px;
+  width: 100vw;
+  position: relative;
+  bottom: 0;
+  background-color: darkmagenta;
+}
