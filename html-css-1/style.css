@@ -34,7 +34,7 @@ header {
 }
 
 .menu-button {
-  background-color:  transparent;
+  background-color: transparent;
   border: none;
   color: white;
   margin: 0 25px;
@@ -64,33 +64,52 @@ body {
   font-size: 5rem;
 }
 
-.green-boxes {
+/* .green-boxes {
   width: 100vw;
   height: 100px;
-  display: inline-block;
-  
-}
+} */
 
 .green-box {
-  height: 150px;
-  width: 150px;
+  height: 350px;
+  width: 350px;
+  margin: 25px 62px;
   background-color: mediumaquamarine;
   border-radius: 20%;
-  
+  display: inline-block;
 }
 
-.orange-boxes {
+/* .orange-boxes {
   width: 100vw;
-  height: 200px;
-}
+  height: 300px; 
+} */
 
 .orange-box {
-  width: 200px;
-  height: 100px;
+  width: 500px;
+  height: 250px;
   background-color: orange;
-  border-radius: 10%;
+  display: inline-block;
+  margin: 25px 105px;
 }
 
+.my-thanks {
+  height: 100px;
+  width: 400px;
+  display: inline-block;
+  margin: 25px 170px;
+}
+
+.textbox-pic {
+  width: 100vw;
+  height: 300px;
+  display: inline-block;
+  /* padding: 50px; */
+}
+
+.pic-1 {
+  width: 400px;
+  height: 200px;
+  margin: 10px 110px;
+}
 
 footer {
   position: absolute;
