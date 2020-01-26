@@ -26,7 +26,7 @@ const me = {
   superHeroName: 'PassFist',
   homeTown: 'Las Vegas',
   superPowers: ['Ninja skills', 'Enhanced strength', 'Enhanced Agility'],
-  superPowerXP: Math.floor(Math.random() * 100) + 1,
+  superPowerXP: function () {return Math.floor(Math.random() * 100) + 1},
   profileImage: function () {
     return `https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1 }.jpg`
 }
@@ -45,11 +45,10 @@ const homeTown = me.homeTown
 // Next, create a for loop to loop over the remaining three colors. If any of the colors is 'blue', change it's value to '#4D4DFF' (which is just a more appealing shade of blue). Outside of the for loop but still inside of setColor, invoke the function called 'background' which will take in three arguments. These arguments should be the three items remaining in your colors array. 
 
 function setColor (arr) {
-  arr.splice(3, arr.length)
-
+  arr.splice(3)
   for (i = 0; i < arr.length; i++) {
     if (arr[i] === 'blue') {
-      return arr[i] = '#4D4DFF'
+      arr[i] = 'purple'
     }
   }
   background(...arr)
@@ -58,22 +57,22 @@ function setColor (arr) {
 //////////////////Step 5////////////////////
 //Create a function called 'setPowers' that takes in 'arr' as a parameter. In your setPowers function, loop over the arr parameter and run a function we created called createLi(), which will take each item of the array as an argument. Remember, you did not create the createLi function. The createLi function is a function we created that determines how the content is displayed.
 
-arr.forEach(createLi => {
-  
-});
-
 // function setPowers (arr) {
-//   for (i = 0; i < arr.length; i++) {
-//     createLi(arr[i])
-//   }
+//   arr.forEach(el => createLi(el))
 // }
+
+function setPowers (arr) {
+  for (i = 0; i < arr.length; i++) {
+    createLi(arr[i])
+  }
+}
 
 //////////////////Step 6////////////////////
 //Lastly, create a function called 'redactInfo' that will take in an object called 'obj' as a parameter. Now, imagine your super hero needs to go undercover, and you need to remove all info about them. That is what this function will do. In your function, loop over the obj parameter passed in, and change each keys value to 'redacted'. Outside of the loop but still in the redactInfo function, run the function redacted() which is a function we created that will update the text on the screen.
 
 const redactInfo = obj => {
   for (let key in obj) {
-    obj[key] === 'redacted'
+    key = 'redacted'
   }
   redacted()
 }
